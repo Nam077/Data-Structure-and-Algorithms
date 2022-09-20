@@ -2,7 +2,7 @@ from typing import Any
 
 
 class Result:
-    def __int__(self, minutes, seconds):
+    def __init__(self, minutes, seconds):
         self.minutes = minutes
         self.seconds = seconds
 
@@ -10,10 +10,7 @@ class Result:
 def time_conversion_2(seconds):
     minute_result: int | Any = seconds // 60
     second_result = seconds % 60
-    result = Result()
-    result.minutes = minute_result
-    result.seconds = second_result
-    return result
+    return Result(minute_result, second_result)
 
 
 if __name__ == '__main__':
