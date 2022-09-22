@@ -13,7 +13,7 @@ def unique_number(arr):
         return "Not found"
     number_return = array_number[0]
     for i in range(1, len(array_number)):
-        if array_number[i] > number_return:
+        if array_number[i] > number_return: 
             number_return = array_number[1]
     return number_return
 
